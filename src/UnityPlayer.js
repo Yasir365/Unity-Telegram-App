@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 const UnityPlayer = () => {
     useEffect(() => {
         const script = document.createElement("script");
-        script.src = "/unityBuild/Build/build.loader.js";
+        script.src = "/unityBuild/Build/builds.loader.js";
         script.onload = () => {
             window.createUnityInstance(document.querySelector("#unity-canvas"), {
                 dataUrl: "/unityBuild/Build/webgl.data",
